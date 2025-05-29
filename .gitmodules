@@ -1,0 +1,3 @@
+[submodule "huggingface-detr"]
+	path = huggingface-detr
+	url = git@github.com:ARG-NCTU/huggingface-detr.git
