@@ -1,0 +1,18 @@
+<launch>
+
+    <arg name="pub_detection_image" default="true"/>
+    
+    <arg name="hub_id" default="ARG-NCTU"/>
+    <arg name="repo_id" default="detr-resnet-50-finetuned-600-epochs-GuardBoat-dataset"/>
+
+    <arg name="classes_path" default="$(find detr_inference)/classes/GuardBoat_classes.txt"/>
+
+    <arg name="confidence_threshold" default="0.5"/>
+
+  
+    <!-- 啟動你的 Python 腳本作為 ROS node -->
+    <node pkg="detr_inference" type="spawn_model.py" name="spawn_model_node" output="screen" >
+            <param name="use_sim_time" value="true" />
+    </node>
+
+</launch>
