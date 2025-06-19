@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="jv1">
+    <static>true</static>
+    <link name="link">
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <!-- <scale>0.0254 0.0254 0.0254</scale> -->
+            <uri>model://jv1_description/meshes/jv1.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <!-- <scale>0.0254 0.0254 0.0254</scale> -->
+            <uri>model://jv1_description/meshes/jv1.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>
+

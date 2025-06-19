@@ -1,0 +1,13 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 27.10.2016 19:35:26
+
+newmtl BoatMaterial
+	Ns 10
+	Ka 0.8 0.8 0.8
+	Kd 0.8 0.8 0.8
+	Ks 0 0 0
+	illum 2
+	map_Kd model://JV1_description/materials/textures/Boat_Roughness.png
+
+
+

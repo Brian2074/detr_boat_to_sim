@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:macro name="usv_dynamics_gazebo" params="name">
+    <!--Gazebo Plugin for simulating jv1 dynamics-->
+    <gazebo>
+      <plugin name="usv_dynamics_${name}" filename="libusv_gazebo_dynamics_plugin.so">
+        <bodyName>${namespace}/dummy_link</bodyName>
+        <waterLevel>0.65</waterLevel>
+        <waterDensity>1024.0</waterDensity>
+        <!-- Linear and quadratic drag -->
+        <!-- origin -->
+        <!-- <xU>2129.0366</xU>
+        <xUU>-29.1977</xUU>
+        <yV>1677.5</yV>
+        <yVV>18172.9</yVV>
+        <zW>127297.95</zW>
+        <zWW>0.0</zWW>
+        
+        <mQ>12729.95</mQ>
+        <mQQ>12729.79</mQQ>
+        <kP>127297.95</kP>
+        <kPP>12729.79</kPP>
+        <nR>22216.615</nR>
+        <nRR>634760.4286</nRR> -->
+        <xU>0.0000</xU>
+        <xUU>153.0285</xUU>
+        <yV>2192.2172</yV>
+        <yVV>0.0000</yVV>
+        <zW>14288.8744</zW>
+        <zWW>0.0000</zWW>
+
+        <mQ>2303.5096</mQ>
+        <mQQ>180.6183</mQQ>
+        <kP>14995.8182</kP>
+        <kPP>803.4102</kPP>
+        <nR>15369.4673</nR>
+        <nRR>681.3849</nRR>
+
+        <!-- General dimensions -->
+        <hullRadius>0.87</hullRadius>
+        <boatWidth>2.16</boatWidth>
+        <boatLength>7.144</boatLength>
+        <!-- Length discretization, AKA, "N" -->
+        <length_n>2</length_n>
+        <wave_model>ocean_waves</wave_model>
+      </plugin>
+    </gazebo>
+  </xacro:macro>
+</robot>

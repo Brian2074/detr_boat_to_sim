@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>jv1_description</name>
+  <version>0.0.0</version>
+  <description>
+    URDF model of Jong Shyn Boats, a Simulate hypothetical surface vehicle designed by
+    Uwe Chang.
+  </description>
+
+  <maintainer email="uwe90711@gmail.com">Uwe Chang</maintainer>
+
+  <license>Apache 2.0</license>
+
+  <author email="uwe90711@gmail.com">Uwe Chang</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>wamv_gazebo</depend>
+  <depend>xacro</depend>
+
+</package>
